@@ -16,7 +16,7 @@ class CreateCharacterController {
   private final CreateCharacterUseCase createCharacterUseCase;
 
   @PostMapping
-  void createCharacter(@RequestBody Character character) {
-    createCharacterUseCase.createCharacter(character);
+  private void createCharacter(@RequestBody Character character) {
+    createCharacterUseCase.create(character);
   }
 }
